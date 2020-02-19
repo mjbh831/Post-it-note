@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Titillium+Web|Waiting+for+the+Sunrise&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a83bc9ca66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="modal" id="adding">
+        <div class="top">
+            <div class="icon"><i class="fas fa-sticky-note"></i></div>
+            <label class="modal-title" for="add-task">Add a New Task</label>
+            <button class="rev-styles exit-icon" id="addexit"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="innerbox">
+            <input class="userinput" type="text" name="add-task" maxlength = "25" autofocus>
+            <button id="enter">Enter</button>
+        </div>
+    </div>   
+    <div class="modal" id="letstalk">
+        <div class="top">
+            <div class="icon"><i class="fas fa-sticky-note"></i></div>
+            <p>Let's Talk</p>
+            <button class="rev-styles exit-icon" id="talkexit"> <i class="fas fa-times"></i></button>
+        </div>
+        <div class="innerbox">
+            <p class="innertext">Time to stop writing things to do and start doing things to do!</p>
+        </div>
+    </div> 
+    
+    <div class="notepad">
+        <img class="tack" src="img/thumbtack.png" alt="">
+        <h1>To-Do List</h1>
+        <ul>
+        </ul>
+        <div class="menu">
+            <button id="plus" class="rmv-styles"><i class="fas fa-plus"></i></button>
+            <button id="minus" class="rmv-styles"><i class="fas fa-minus-circle"></i></button>
+            <button id="reset" class="rmv-styles"><i class="fas fa-recycle"></i></button>
+        </div>           
+    </div>
+
+
+    
+    
+
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

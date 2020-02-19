@@ -1,0 +1,265 @@
+body {
+    background-image: url(../img/b3.jpeg);
+    background-size:cover;
+    background-position: center;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rmv-styles {
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+.rmv-styles:hover,
+.rmv-styles:focus {
+    background-color: rgba(0,0,0,0);
+}
+  
+.rmv-styles:active {
+    transform: scale(0.99);
+}
+
+/* MODAL */
+.modal {
+    width: 300px;
+    height: 125px;
+    background: linear-gradient(53deg, rgb(238, 68, 25) 50%, rgb(227, 94, 32) 50%);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Righteous', cursive;
+    position: absolute;
+    z-index: 2;
+}
+.top {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.icon{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+.modal-title {
+    font-size: 1.3em;
+}
+.exit-icon {
+    border-radius: 50%;
+    width: 25px;
+    height:  25px;
+    background-color: rgba(228, 218, 218, 0.3);
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(209, 50, 50);
+    border: none;
+}
+.exit-icon:hover {
+    border-radius: 50%;
+    width: 25px;
+    height:  25px;
+    background-color: rgba(253, 253, 253, .5);
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(238, 227, 227);
+    border: none;
+}
+.innerbox {
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(70, 11, 11);
+    width: 100%;
+    height: 65%;
+    background-color: rgb(241, 238, 239);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+input {
+    width: 175px;
+    border-radius: 5px;
+    background-color: rgb(248, 195, 182);
+}
+
+#enter {
+    color: rgb(133, 35, 11);
+    width: 20%;
+    height: 60%;
+    border-radius: 10px;
+    font-family: 'Righteous', cursive;
+}
+
+.innertext {
+    color:rgb(167, 48, 19);
+    padding: 10px;
+}
+
+
+/* MODAL */
+
+/* TO DO LIST  */
+
+@keyframes rollIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-300%, 0, 0) rotate3d(0, 0, 1, -120deg);
+      transform: translate3d(-300%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+.notepad {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 339px; 
+    max-width: 339px;
+    min-height: 332px;
+    max-height: 332px;
+    background-image: url(../img/sticky.png);
+    font-family: 'Rock Salt', cursive;
+    padding-left: 38px;
+    rotate: -20deg;
+    animation: rollIn .5s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}  
+
+.tack {
+    position: absolute;
+    left: 60%;
+    width: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    color: rgba(0,0,0,0.9);
+    rotate: -15deg;
+    width: 150px;
+    opacity: .9;  
+    color: rgb(20, 20, 105);
+}
+
+.task{
+    font-family: 'Waiting for the Sunrise', cursive;
+    color: rgb(20, 20, 105);
+    opacity: .8;
+    list-style: none;
+    line-height: 16px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.strikesm {
+    position: absolute;
+    rotate: 30deg;
+    margin-top: -8px;
+    left: 8%;
+    width: 40px;
+    height: 30px;
+}
+.strikemd {
+    width:50%;
+    position: absolute;
+    rotate: 8deg;
+    left: 6%;
+}
+
+.strikemd2 {
+    width:40%;
+    position: absolute;
+    rotate: 9deg;
+    left: 5%;
+}
+
+.strikelg {
+    width:80%;
+    position: absolute;
+    rotate: 8deg;
+    left: 4%;
+    margin-top: -7px;
+}
+
+/* NOTEPAD MENU */
+
+.menu {
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    width: 30%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu:hover {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    width: 32%;
+    height: 12%;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fas {
+    color: rgba(0, 0, 0, .2);
+}
+
+.fa-plus:hover {
+    color: green;
+}
+
+.fa-minus-circle:hover {
+    color: red;
+}
+
+.fa-recycle:hover {
+    color: blue;
+}
+
+.fa-trash:hover{
+    color: black;
+}
+
+/* NOTEPAD MENU */
+
+
+/* TO DO LIST  */
